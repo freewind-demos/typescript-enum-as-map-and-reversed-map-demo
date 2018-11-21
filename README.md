@@ -1,19 +1,13 @@
-TypeScript tsconfig.json Demo
-============================
-
-`tsconfig.json`是typescript项目的说明文件，指定`tsc`所需要的各个参数。
+TypeScript Enum as "map" as "reversed map" Demo
+===============================================
 
 ```
 npm install
-npm run tsc
-```
-
-或者使用`ts-node`:
-
-```
 npm run demo
 ```
 
-Resources
----------
-- tsconfig详解：<https://www.typescriptlang.org/docs/handbook/tsconfig-json.html>
+For `FieldIdTypes[11]`, webstorm gives me an warning that "potential invalid target of the indexed access",
+since the compiler can't make sure 11 is a valid index.
+
+If we define 2 maps, it will be typesafe in both cases.
+

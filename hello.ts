@@ -1,3 +1,10 @@
-import {capitalize} from 'lodash';
+enum FieldIdTypes {
+  Text = 'aa',
+  List = 11,
+  Switch = 33
+}
 
-console.log("Hello, " + capitalize("typescript") + "!");
+console.log(FieldIdTypes['Text']);
+console.log(FieldIdTypes[11]);
+//console.log(FieldIdTypes['aa']);  // compilation error
+
